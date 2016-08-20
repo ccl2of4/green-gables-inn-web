@@ -6,6 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('suites');
+  this.route('suite', { path: '/suite/:suite_name' });
+  this.route('specials');
 });
 
 export default Router;

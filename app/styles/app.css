@@ -1,0 +1,59 @@
+body {
+  background-image: url("images/background2.png");
+  font-family: 'Cardo', serif;
+}
+
+.navbar.navbar-default {
+  padding:0px;
+  margin:0px;
+  border:0px;
+}
+
+.background {
+  background-image: url("images/background.png");
+}
+
+.container {
+  background-image: url("images/background.png");
+  background-color: #214625;
+  box-shadow:0 1px 6px 1px rgba(0, 0, 0, 0.2);
+}
+
+.row {
+  background-color:white;
+}
+
+.navbar {
+  background-image: url("images/background.png");
+  background-color: #214625;
+}
+
+ul.nav.navbar-nav > li > a {
+  color:white;
+}
+
+ul.nav.navbar-nav > li > a:hover {
+  color:lightgrey;
+}
+
+a {
+  color:#486a41
+}
+
+a:hover {
+  color:#214625
+}
+
+.footer {
+  color:white;
+  padding-top:20px;
+  padding-bottom:20px;
+  background-image: url("images/background.png");
+  background-color: #214625;
+}
+
+.logo {
+  margin-top:40px;
+  padding-top:30px;
+  padding-bottom:30px;
+}
