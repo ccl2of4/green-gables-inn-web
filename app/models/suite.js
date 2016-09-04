@@ -4,9 +4,9 @@ import attr from 'ember-data/attr';
 
 export default Model.extend({
   name: attr(),
-  summary: attr(),
-  amenitites: attr(),
-  thumbnail: attr(),
-  images: attr(),
   price: attr()
+  //summary: attr(),
+  //amenitites: attr(),
+  //thumbnail: attr(),
+  //images: attr(),
 });
