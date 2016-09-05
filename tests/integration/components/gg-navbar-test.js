@@ -11,14 +11,5 @@ test('it renders', function(assert) {
 
   this.render(hbs`{{gg-navbar}}`);
 
-  assert.equal(this.$().text().trim(), '');
-
-  // Template block usage:
-  this.render(hbs`
-    {{#gg-navbar}}
-      template block text
-    {{/gg-navbar}}
-  `);
-
-  assert.equal(this.$().text().trim(), 'template block text');
+  assert.equal(this.$('a').length, 3);
 });
