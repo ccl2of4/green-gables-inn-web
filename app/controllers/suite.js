@@ -39,4 +39,4 @@ let images = {
     "assets/images/slides/annes-corner/4.jpg",
     "assets/images/slides/annes-corner/5.jpg",
   ]
-}
+};
