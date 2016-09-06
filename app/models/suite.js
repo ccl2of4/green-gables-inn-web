@@ -9,15 +9,15 @@ export default Model.extend({
   // These are properties not provided by the API but they need to be
   // used in a few places in the application.
   summary: function() {
-    return getProp(this.get('name'), 'summary')
+    return getProp(this.get('name'), 'summary');
   }.property('name'),
 
   amenities: function() {
-    return getProp(this.get('name'), 'amenities')
+    return getProp(this.get('name'), 'amenities');
   }.property('name'),
 
   thumbnail: function() {
-    return getProp(this.get('name'), 'thumbnail')
+    return getProp(this.get('name'), 'thumbnail');
   }.property('name')
 
 });
