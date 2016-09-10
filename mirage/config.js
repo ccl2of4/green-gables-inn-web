@@ -68,6 +68,7 @@ export default function() {
         id: "2",
         attributes : {
           name: "The Porch Suite",
+          price: 350,
           summary: "The Porch Suite is on the first floor of the Inn, and has one bedroom with a queen sized bed and 1 1/2 baths. The living room has a queen size sofa-bed and the 1/2 bath is off the living room. The kitchen is large and overlooks the rear garden. (Minimum 2-night stay)",
           amenities: [""],
           thumbnail: "assets/images/suites/the-porch-suite.jpg",
@@ -79,6 +80,7 @@ export default function() {
         id: "3",
         attributes : {
           name: "The Crows Nest",
+          price: 450,
           summary: "The Crows Nest is off to the side front of the Inn, and has large windows overlooking the front yard. There is one bedroom and bath and a kitchen/dining area off the living area. The suite has a private entrance off the main porch. Pet friendly. (Minimum 2-night stay)",
           amenities: [""],
           thumbnail: "assets/images/suites/the-crows-nest.jpg",
@@ -90,6 +92,7 @@ export default function() {
         id: "4",
         attributes : {
           name: "Anne's Corner",
+          price: 200,
           summary: "A one bedroom with a queen sized bed, one bath suite with a combination living /dining area. The living room has a queen sized sleeper sofa. The suite has a full kitchen and bath. Radiant heat floors maintain the appropriate temperature all year long. Anne’s Corner is located on the ground floor. This suite has a private entrance. Pet Friendly. (Minimum 2-night stay)",
           amenities: [""],
           thumbnail: "assets/images/suites/annes-corner.jpg",
