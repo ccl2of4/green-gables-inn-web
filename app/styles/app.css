@@ -28,6 +28,18 @@ body {
   background-color: #214625;
 }
 
+button.btn-primary {
+  background-image: url("images/background.png");
+  background-color: #214625;
+  border:0px;
+}
+
+button.btn-primary:hover {
+  background-image: url("images/background.png");
+  background-color: #214625;
+  color:lightgrey;
+}
+
 ul.nav.navbar-nav > li > a {
   color:white;
 }
@@ -43,6 +55,18 @@ a {
 a:hover {
   color:#214625
 }
+
+.datepicker table tr td span.active.active, .datepicker table tr td.active.active {
+  background-image: url("images/background.png");
+  background-color: #214625;
+}
+
+.datepicker table tr td span.active.active:hover, .datepicker table tr td.active.active:hover {
+  background-image: url("images/background.png");
+  background-color: #214625;
+  color:lightgrey;
+}
+
 
 .footer {
   color:white;

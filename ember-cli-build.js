@@ -31,6 +31,8 @@ module.exports = function(defaults) {
     destDir: 'fonts'
   });
 
+  app.import('bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js');
+  app.import('bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css');
 
   app.import('bower_components/slick-carousel/slick/slick.js');
   app.import('bower_components/slick-carousel/slick/slick.css');

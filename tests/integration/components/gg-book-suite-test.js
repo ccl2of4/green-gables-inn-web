@@ -12,5 +12,7 @@ test('it renders', function(assert) {
   this.set('suite', { price: 500 });
   this.render(hbs`{{gg-book-suite suite=suite}}`);
 
+  assert.equal(this.$('#checkin-datepicker').length, 1);
+  assert.equal(this.$('#checkout-datepicker').length, 1);
   assert.notEqual(this.$().text().indexOf('$500'), -1);
 });

@@ -1,9 +1,21 @@
 <div class="col-md-6">
-  ${{suite.price}}
+  <span class="suite-price">${{suite.price}}</span>
   <br/>Per Night
 </div>
+
 <div class="col-md-6">
-  The Green Gables Suite
-  <br/>From To
-  <br/>Book Now
+  <form>
+    <h4 class="suite-name-sm">
+      The Green Gables Suite
+    </h4>
+    <div class="form-group">
+      <label class="sr-only" for="checkin-datepicker">From</label>
+      <input type="text" class="form-control" id="checkin-datepicker" placeholder="From"/>
+    </div>
+    <div class="form-group">
+      <label class="sr-only" for="checkout-datepicker">To</label>
+      <input type="text" class="form-control" id="checkout-datepicker" placeholder="To"/>
+    </div>
+    <button type="submit" class="btn btn-primary book-suite-btn">Book Now</button>
+  </form>
 </div>
