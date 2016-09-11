@@ -5,18 +5,31 @@ export default Ember.Component.extend({
 
   setup: function() {
 
-    $('#checkin-datepicker')
-      .on('keydown', () => {
-        return false;
-      })
-      .datepicker('setStartDate', new Date());
+    let checkinDatepicker = $('#checkin-datepicker')
+      .datepicker()
+      .on('keydown', () => { return false; })
+      .on('show', () => {
+        checkinDatepicker.datepicker('setStartDate',     new Date())
+                         .datepicker('setDisabledDates', this.get('reservedDates'));
+      });
 
-    $('#checkout-datepicker')
-      .on('keydown', () => {
-        return false;
-      })
-      .datepicker('setStartDate', new Date());
+    let checkoutDatepicker = $('#checkout-datepicker')
+      .datepicker()
+      .on('keydown', () => { return false; })
+      .on('show', () => {
+        checkoutDatepicker.datepicker('setStartDate',     this.getCheckoutStartDate(checkinDatepicker))
+                          .datepicker('setDisabledDates', this.get('reservedDates'));
+      });
 
   }.on('didInsertElement'),
+
+  getCheckoutStartDate : function(checkinDatepicker) {
+    let checkoutStartDate = new Date();
+    let checkinDate       = checkinDatepicker.datepicker('getDate');
+    if (checkinDate) {
+      checkoutStartDate.setDate(checkinDate.getDate() + 2);
+    }
+    return checkoutStartDate;
+  }
 
 });
