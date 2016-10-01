@@ -22,3 +22,11 @@ test('suite information is displayed', function(assert) {
   });
 
 });
+
+test('navigate to booking', function(assert) {
+  visit('/suite/1');
+  click('button.book-suite-btn');
+  andThen(() => {
+    assert.equal(currentURL(), '/booking/1');
+  });
+});

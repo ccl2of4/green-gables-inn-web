@@ -16,6 +16,10 @@
       <label class="sr-only" for="checkout-datepicker">To</label>
       <input type="text" class="form-control" id="checkout-datepicker" placeholder="To"/>
     </div>
-    <button type="submit" class="btn btn-primary book-suite-btn">Book Now</button>
+
+    {{#link-to 'booking' suite}}
+      <button class="btn btn-primary book-suite-btn">Book Now</button>
+    {{/link-to}}
+
   </form>
 </div>
