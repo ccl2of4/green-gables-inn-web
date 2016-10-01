@@ -1,7 +1,7 @@
 import { moduleForComponent, test } from 'ember-qunit';
 import hbs from 'htmlbars-inline-precompile';
 
-moduleForComponent('gg-book-suite', 'Integration | Component | gg book suite', {
+moduleForComponent('gg-datepickers', 'Integration | Component | gg datepickers', {
   integration: true
 });
 
@@ -10,9 +10,8 @@ test('it renders', function(assert) {
   // Handle any actions with this.on('myAction', function(val) { ... });
 
   this.set('suite', { price: 500 });
-  this.render(hbs`{{gg-book-suite suite=suite}}`);
+  this.render(hbs`{{gg-datepickers suite=suite}}`);
 
-  assert.equal(this.$('#checkin-datepicker').length, 1);
-  assert.equal(this.$('#checkout-datepicker').length, 1);
-  assert.notEqual(this.$().text().indexOf('$500'), -1);
+  assert.equal(this.$('#checkin-datepicker').length, 1, 'Should have checkin datepicker');
+  assert.equal(this.$('#checkout-datepicker').length, 1, 'Should have checkout datepicker');
 });
