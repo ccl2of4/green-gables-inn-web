@@ -19,7 +19,7 @@
         <label class="sr-only" for="full-name">Full Name</label>
         {{input type="text" value=reservation.fullName class="form-control" id="full-name" placeholder="Full Name"}}
       </div>
-      
+
       <div class="form-group">
         <label class="sr-only" for="number-of-people">Number of People</label>
         {{input type="text" value=reservation.numberOfPeople class="form-control" id="number-of-people" placeholder="Number of People"}}
@@ -41,6 +41,7 @@
       </div>
 
       <button {{action 'submit'}} type="submit" class="btn btn-primary book-suite-btn">Book Now</button>
+
     </form>
   </div>
 

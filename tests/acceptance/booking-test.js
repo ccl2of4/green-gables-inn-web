@@ -31,3 +31,17 @@ test('booking information is displayed', function(assert) {
     assert.equal(comments.attr('placeholder'), 'Special Requirements');
   });
 });
+
+test('submit reservation', function(assert) {
+  assert.expect(0);
+  
+  visit('/booking/1');
+  fillIn('#checkin-datepicker', '10/10/2015');
+  fillIn('#checkout-datepicker', '10/12/2015');
+  fillIn('#full-name', 'Bob Smith');
+  fillIn('#number-of-people', '3');
+  fillIn('#email', 'bobsmith@email.com');
+  fillIn('#phone', '555-555-5555');
+  fillIn('#comments', 'Hello!');
+  click('button[type=submit]');
+});

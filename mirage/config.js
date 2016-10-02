@@ -115,6 +115,10 @@ export default function() {
     };
   });
 
+  this.post('/reservations', (db, request) => {
+    return request.requestBody;
+  });
+
   this.get('/slides', () => {
     return {
       data : [
