@@ -119,6 +119,11 @@ export default function() {
     return request.requestBody;
   });
 
+  this.post('/clients', (db, request) => {
+    let client = request.requestBody;
+    return client;
+  });
+
   this.get('/slides', () => {
     return {
       data : [
