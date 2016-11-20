@@ -7,7 +7,7 @@ body {
   padding:0px;
   margin:0px;
   border:0px;
-  
+
   /* Datepicker z-index is 10. This needs to be set to something lower than that.
      Seems like bootstrap has it set higher by default. */
   z-index:9;
@@ -52,12 +52,28 @@ ul.nav.navbar-nav > li > a:hover {
   color:lightgrey;
 }
 
+h3 a {
+  color:#486a41;
+}
+
+h3 a:hover {
+  color:#214625;
+}
+
+h3 a:visited {
+  color:#486a41;
+}
+
 a {
-  color:#486a41
+  color:white;
 }
 
 a:hover {
-  color:#214625
+  color:grey;
+}
+
+a:visited {
+  color:lightgrey;
 }
 
 .datepicker table tr td span.active.active, .datepicker table tr td.active.active {
