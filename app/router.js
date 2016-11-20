@@ -10,6 +10,10 @@ Router.map(function() {
   this.route('suite', { path: '/suite/:suite_id' });
   this.route('specials');
   this.route('booking', { path: '/booking/:suite_id'});
+
+  this.route('admin', function() {
+    this.route('login');
+  });
 });
 
 export default Router;
