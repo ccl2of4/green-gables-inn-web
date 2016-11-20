@@ -13,6 +13,7 @@ test('fill in admin login page', function(assert) {
   assert.expect(0);
 
   visit('/admin/login');
+  fillIn("#username", '12345');
   fillIn('#password', '12345');
   click('button[type=submit]');
 });
