@@ -1,1 +1,16 @@
-{{outlet}}
+<div class="row">
+
+  <div class="col-md-3">
+    <form>
+
+      <div class="form-group">
+        <label class="sr-only" for="password">Admin Password</label>
+        {{input type="text" value=password class="form-control" id="password" placeholder="Admin Password"}}
+      </div>
+
+      <button {{action 'submit'}} type="submit" class="btn btn-primary book-suite-btn">Login</button>
+
+    </form>
+  </div>
+
+</div>

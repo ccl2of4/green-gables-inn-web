@@ -8,3 +8,11 @@ test('visit admin login page', function(assert) {
   click('a:contains("Admin")');
   andThen(() => assert.equal(currentURL(), '/admin/login'));
 });
+
+test('fill in admin login page', function(assert) {
+  assert.expect(0);
+
+  visit('/admin/login');
+  fillIn('#password', '12345');
+  click('button[type=submit]');
+});
