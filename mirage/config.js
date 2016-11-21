@@ -1,3 +1,6 @@
+import Mirage from 'ember-cli-mirage';
+import ENV from 'green-gables-inn-web/config/environment';
+
 export default function() {
 
   // These comments are here to help you get started. Feel free to delete them.
@@ -102,6 +105,13 @@ export default function() {
       }
     ]
   };
+
+  this.get('/login', (schema, request) => {
+    if (request.username === ENV['admin-username'] && request.password === ENV['admin-password']) {
+      return {};
+    }
+    return new Mirage.response(401);
+  });
 
   this.get('/suites', () => {
     return suites;
