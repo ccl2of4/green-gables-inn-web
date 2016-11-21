@@ -19,6 +19,11 @@ module.exports = function(environment) {
     }
   };
 
+  if (environment === 'development' || environment === 'test') {
+    ENV['admin-username'] = 'username';
+    ENV['admin-password'] = 'password';
+  }
+
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
